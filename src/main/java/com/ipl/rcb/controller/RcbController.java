@@ -12,7 +12,7 @@ public class RcbController {
         model.addAttribute("teamName", "Royal Challengers Bengaluru");
         model.addAttribute("teamShortName", "RCB");
         model.addAttribute("founded", "2008");
-        model.addAttribute("homeGround", "M. Chinnaswamy Stadium, Bengaluru");
+        model.addAttribute("homeGround", "M.Chinnaswamy Stadium, Bengaluru");
         model.addAttribute("captain", "Rajat Patidar"); // Updated captain as requested
         model.addAttribute("coach", "Andy Flower");
         model.addAttribute("titles", "1"); // Updated title count as requested
