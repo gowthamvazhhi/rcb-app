@@ -1,0 +1,17 @@
+# Maven build output
+target/
+
+# Logs
+*.log
+
+# Mac system files
+.DS_Store
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Maven internal
+.mvn/
+

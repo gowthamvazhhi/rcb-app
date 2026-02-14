@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${teamShortName} + ' - ' + ${teamName}">RCB - Royal Challengers Bangalore</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="animated-bg"></div>
+            <h1 class="team-title" th:text="${teamName}">Royal Challengers Bangalore</h1>
+            <p class="team-motto" th:text="${teamMotto}">Play Bold</p>
+        </div>
+        
+        <div class="logo-container">
+            <img th:src="@{/images/rcb-logo.png}" alt="RCB Logo" class="team-logo">
+        </div>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon">🏏</div>
+                <h3>Team</h3>
+                <p th:text="${teamShortName}">RCB</p>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-icon">📅</div>
+                <h3>Founded</h3>
+                <p th:text="${founded}">2008</p>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-icon">🏟️</div>
+                <h3>Home Ground</h3>
+                <p th:text="${homeGround}">M. Chinnaswamy Stadium</p>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-icon">👨‍✈️</div>
+                <h3>Captain</h3>
+                <p th:text="${captain}">Rajat Patidar</p>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-icon">🎓</div>
+                <h3>Coach</h3>
+                <p th:text="${coach}">Andy Flower</p>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-icon">🏆</div>
+                <h3>IPL Titles</h3>
+                <p th:text="${titles}">1</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Ee Sala Cup Namde! 🏏</p>
+        </div>
+    </div>
+</body>
+</html>
